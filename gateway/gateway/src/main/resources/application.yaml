@@ -1,0 +1,17 @@
+---
+server:
+  port: 9999
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: client1
+          uri: http://localhost:8080/
+          predicates:
+            - Path=/a**
+        - id: client2
+          uri: http://localhost:8081/
+          predicates:
+            - Path=/hi**
