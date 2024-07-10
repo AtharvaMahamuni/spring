@@ -1,0 +1,25 @@
+Book Social Network (BSN)
+-------------------------
+
+Consists the range of functionality for Book Social Network.
+
+* Book Management
+- Users can create, update, and delete books.
+- Each book should have attributes like title, author, genre, description, etc.
+- Implement CRUD (Create, Read, Update, Delete) operations for books.
+- Users can archive books they no longer want to share but want to keep a record of.
+
+* Book Sharing
+- Users can mark a book as "available for sharing".
+- Other users can view the list of available books.
+- Implement functionality to share a book with another user.
+
+* Book Borrowing
+- Users can borrow book.
+- Track the status of each book (available, borrowed, archived).
+- Implement a mechanism to prevent multiple users from borrowing the same book simultaneously.
+
+* User Authentication
+- Implement user registration and login functionality.
+- Use Spring Security for backend authentication.
+- Integrate JWT (JSON Web Token) for secure token-based authentication between Backend and Frontend.
